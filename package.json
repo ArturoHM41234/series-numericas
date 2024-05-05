@@ -1,0 +1,19 @@
+{
+  "name": "series-numericas",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite-preview",
+    "format": "prettier --write src/",
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+  },
+  "devDependencies": {
+    "vite": "^5.2.8",
+    "prettier": "^3.2.5",
+  },
+}

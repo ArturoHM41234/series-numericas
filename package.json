@@ -1,19 +1,29 @@
 {
   "name": "series-numericas",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Entrevista tecnica",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite-preview",
-    "format": "prettier --write src/",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix --ignore-path .gitignore"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArturoHM41234/series-numericas.git"
+  },
+  "author": "Hernandez Moreno Arturo",
   "dependencies": {
-    "pinia": "^2.1.7",
-    "vue": "^3.4.21",
+    "pinia": "^2.1.7"
   },
   "devDependencies": {
-    "vite": "^5.2.8",
-    "prettier": "^3.2.5",
-  },
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^9.2.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vue": "^3.4.26",
+    "vue-tsc": "^2.0.16"
+  }
 }

@@ -1,12 +1,13 @@
 # Series numericas
-Dadas las siguientes series numéricas:
+Dadas las siguientes series numericas:
+
 - https://es.wikipedia.org/wiki/N%C3%BAmero_triangular
 - https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
 - https://es.wikipedia.org/wiki/N%C3%BAmero_primo
 
-
 Desarrollar una clase con un método que entregue el término n de la serie:
 ![metodo_a_regresar](./metodo.png)
+
 
 Realizar pruebas unitarias al método de la serie numérica usando los 10 números naturales como entrada (10 casos de prueba en total).
 

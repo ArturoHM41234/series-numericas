@@ -1,4 +1,4 @@
-import { gg}
+import { SeriesNumericas } from '../src/series/series.ts'
 
 describe("Serie Numericas", () => {
     test("Termino de la serie", () => {

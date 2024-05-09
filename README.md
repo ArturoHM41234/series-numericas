@@ -21,6 +21,9 @@ Se espera que sean componentes distintos, integrados en una misma aplicación pa
 
 Se permite utilizar JavaScript o TypeScript usando como runtime node.js o deno.js y el corredor de pruebas unitarias de tu preferencia
 
+# About
+This project is built with vue and typescript.
+
 # Run
 To run this project do a
 
@@ -30,4 +33,5 @@ To run this project do a
     npm i
     npm run dev
 ```
+
 

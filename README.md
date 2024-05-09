@@ -21,3 +21,13 @@ Se espera que sean componentes distintos, integrados en una misma aplicación pa
 
 Se permite utilizar JavaScript o TypeScript usando como runtime node.js o deno.js y el corredor de pruebas unitarias de tu preferencia
 
+# Run
+To run this project do a
+
+``` shell
+    git clone https://github.com/ArturoHM41234/series-numericas.git
+    cd series-numericas
+    npm i
+    npm run dev
+```
+

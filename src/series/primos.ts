@@ -1,21 +1,35 @@
-/*
- * Devuelve 1 si es un numero primo y 0 si no lo es
- */
-export function primo(n: number): number {
-  if (n <= 1) {
-    return 0;
-  } else if (n <= 3) {
-    return 1;
-  } else if (n % 2 === 0 || n % 3 === 0) {
-    return 0
-  }
-
-  let i: number = 5;
-  while (i * i <= n) {
-    if (n % i === 0 || n % (i + 2) === 0) {
-      return 0;
+export function primo(posicion: number): number {
+    if (posicion <= 0) {
+        return 0; // No hay números primos en posiciones no positivas
     }
-    i +=6;
-  }
-  return 1
+
+    let count = 0;
+    let numero = 2;
+    while (true) {
+        if (esPrimo(numero)) {
+            count++;
+            if (count === posicion) {
+                return numero;
+            }
+        }
+        numero++;
+    }
+}
+
+function esPrimo(numero: number): boolean {
+    if (numero <= 1) {
+        return false;
+    } else if (numero <= 3) {
+        return true;
+    } else if (numero % 2 === 0 || numero % 3 === 0) {
+        return false;
+    }
+    let i = 5;
+    while (i * i <= numero) {
+        if (numero % i === 0 || numero % (i + 2) === 0) {
+            return false;
+        }
+        i += 6;
+    }
+    return true;
 }

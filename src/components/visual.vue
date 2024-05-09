@@ -1,9 +1,15 @@
 <template>
   <p>Triangular: {{ tr }}</p>
   <p>fibonacci: {{ fib }}</p>
-  <p>¿Es primo?: {{ pr }}</p>
-  <p style="font-style: italic; color: gray;">0 no es<br> 1 si es</p>
+  <p>Primo: {{ pr }}</p>
 </template>
+
+<style scoped>
+p {
+  font-style: italic;
+  color: gray;
+}
+</style>
 
 <script setup lang="ts">
 import { defineProps, computed }from 'vue';

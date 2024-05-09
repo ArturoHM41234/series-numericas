@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    width: auto;
+    min-height: 98svh;
+    outline: white 1px solid;
+}
+
+.container {
+    border: 1px solid black;
+    text-align: center;
+    width: 25em;
+    height: 20em;
+}
+
+

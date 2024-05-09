@@ -1,15 +1,12 @@
 <template>
-  <p>Triangular: {{ tr }}</p>
-  <p>fibonacci: {{ fib }}</p>
-  <p>Primo: {{ pr }}</p>
+  <div class="sub-container">
+    <div class ="sub-results">
+      <p>Triangular: {{ tr }}</p>
+      <p>fibonacci: {{ fib }}</p>
+      <p>Primo: {{ pr }}</p>
+    </div>
+  </div>
 </template>
-
-<style scoped>
-p {
-  font-style: italic;
-  color: gray;
-}
-</style>
 
 <script setup lang="ts">
 import { defineProps, computed }from 'vue';

@@ -3,9 +3,12 @@
     <div class="container">
       <h1>Series Numericas</h1>
       <label for="numero">Ingresa un numero:</label>
-    <input v-model.number="input" @input="handleInput" type="text" min="0" name="numero" id="numero" />
-    <p>Serie({{input}}) = {{ sr }}</p>
-    <visual :number="input || 0"></visual>  
+      <input v-model.number="input" @input="handleInput" type="text" min="0" name="numero" id="numero" />
+      <div class="results">
+        <p><var class="result">Serie({{input}}) = {{ sr }}</var></p>
+        <visual class="child-results" :number="input || 0"></visual>          
+      </div>
+
     </div>
   </main>
 </template>
